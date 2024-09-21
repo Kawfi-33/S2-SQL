@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS Cars(
+Cars_ID INT PRIMARY KEY,
+Cars_Name TEXT,
+Cars_HP INT
+);
+INSERT INTO Cars(Cars_ID, Cars_Name, Cars_HP)
+VALUES
+(1,'Porsche 918', 887),
+(2,'Mclaren P1', 916),
+(3,'Ford GT 17' , 647);
+SELECT * FROM Cars;
+SELECT Cars_ID, Cars_Name, Cars_HP
+FROM Cars
+WHERE Cars_HP
+(SELECT MIN(Cars_HP)FROM Cars)
+SELECT Cars_ID, Cars_Name, Cars_HP
+FROM Cars
+WHERE Cars_HP
+(SELECT MAX(Cars_HP)FROM Cars)
+SELECT * FROM Cars
+ORDER BY Cars_HP ASC;
+SELECT * FROM Cars
+ORDER BY Cars_HP DESC;
